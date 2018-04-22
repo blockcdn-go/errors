@@ -1,6 +1,6 @@
 package errors
 
-// Flatten 讲任意个*Error合并到一个单独的*Error中
+// Flatten 将任意个*Error合并到一个单独的*Error中
 func Flatten(err error) error {
 	if _, ok := err.(*Error); !ok {
 		return err
